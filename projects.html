@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Deepa Habib — Cybersecurity portfolio">
+  <title>Projects | Deepa Habib — Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix"></canvas>
+  <div class="grid-bg"></div>
+  <div class="scanline"></div>
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="brand-dot"></span>DEEPA HABIB</a>
+    <button class="menu" aria-label="Toggle menu">☰</button>
+    <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="experience.html">Experience</a><a href="projects.html" class="active">Projects</a><a href="certifications.html">Certifications</a><a href="education.html">Education</a><a href="contact.html">Contact</a></nav>
+  </header>
+
+  <main class="page">
+    <div class="page-head"><div class="num">// 04</div><h1>Security Projects</h1><p>Hands-on projects built around vulnerability management, SOC monitoring, attack simulation, and network defense. Each one shows what I built, how it works, and the security concepts behind it.</p></div>
+    
+    <article class="card project">
+      <div class="project-top"><span class="pno">01</span><span class="tag">PYTHON · FLASK · NMAP</span></div>
+      <h3>Centralized Vulnerability Management Dashboard</h3>
+      <p class="lead">Web dashboard designed to scan, aggregate, and visualize vulnerabilities in lab systems.</p>
+      <div class="pills"><span>CVSS Severity</span><span>Host Prioritization</span><span>Risk Logs</span><span>SOC Reporting</span></div>
+      <div class="flow"><span>Nmap scan</span><i>→</i><span>Aggregate findings</span><i>→</i><span>CVSS severity</span><i>→</i><span>Prioritize hosts</span><i>→</i><span>Risk logs & views</span></div>
+      <div class="cols">
+        <div class="box"><h4>WHAT I BUILT</h4><p>A custom web application dashboard to scan, aggregate, and visually represent lab-system vulnerabilities.</p></div>
+        <div class="box"><h4>HOW IT WORKS</h4><p>It uses Nmap results, applies CVSS-based severity and host prioritization, then organizes findings into remediation-oriented views and risk logs.</p></div>
+      </div>
+      <div class="cols box-row" style="margin-top:28px">
+        <div class="box"><h4>SECURITY CONCEPTS INVOLVED</h4><ul><li>Vulnerability scanning and the vulnerability management lifecycle</li><li>CVSS-based severity scoring</li><li>Host and risk prioritization</li><li>Remediation-oriented reporting for SOC teams</li></ul></div>
+        <div class="box"><h4>WHAT THIS PROJECT SHOWS</h4><ul><li>Python and Flask web development applied to security</li><li>Turning raw scan output into decisions a team can act on</li><li>Thinking in terms of risk, not just a list of findings</li></ul></div>
+      </div>
+    </article>
+    <article class="card project">
+      <div class="project-top"><span class="pno">02</span><span class="tag">KALI LINUX · SIEM</span></div>
+      <h3>Enterprise SOC Simulation & Attack Lab</h3>
+      <p class="lead">Sandboxed enterprise environment for attack simulation, security-event analysis, detection rules, and alerting concepts.</p>
+      <div class="pills"><span>Brute Force</span><span>Log Analysis</span><span>Detection Rules</span><span>Lateral Movement</span></div>
+      <div class="flow"><span>Simulate attack (Kali)</span><i>→</i><span>Collect Windows & Linux logs</span><i>→</i><span>Analyse events</span><i>→</i><span>Detection rules</span><i>→</i><span>Alerting</span></div>
+      <div class="cols">
+        <div class="box"><h4>WHAT I BUILT</h4><p>A sandboxed enterprise environment for attack simulation, security-event analysis, detection rules, and alerting concepts.</p></div>
+        <div class="box"><h4>HOW IT WORKS</h4><p>Security events and audit logs from Windows Server and Linux hosts are analysed to map failed-authentication anomalies and lateral-movement vectors.</p></div>
+      </div>
+      <div class="cols box-row" style="margin-top:28px">
+        <div class="box"><h4>SECURITY CONCEPTS INVOLVED</h4><ul><li>Brute-force and failed-authentication patterns</li><li>Windows Server and Linux audit-log analysis</li><li>Detection rules and alerting concepts (SIEM)</li><li>Lateral movement vectors</li></ul></div>
+        <div class="box"><h4>WHAT THIS PROJECT SHOWS</h4><ul><li>Seeing an attack from both the attacker and the defender side</li><li>SOC-style monitoring and log-analysis thinking</li><li>Working with Windows Server and Linux hosts together</li></ul></div>
+      </div>
+    </article>
+    <article class="card project">
+      <div class="project-top"><span class="pno">03</span><span class="tag">VIRTUALIZATION · WIRESHARK</span></div>
+      <h3>IP Spoofing & Network Packet Analysis System</h3>
+      <p class="lead">Sandboxed multi-VM network used to monitor abnormal session signatures and evaluate controlled IP spoofing scenarios.</p>
+      <div class="pills"><span>Packet Monitoring</span><span>TCP/IP Analysis</span><span>Firewall Rules</span><span>Detection</span></div>
+      <div class="flow"><span>Multi-VM network</span><i>→</i><span>Controlled spoofing</span><i>→</i><span>Packet / header analysis</span><i>→</i><span>Ingress & egress rules</span><i>→</i><span>Evaluate defence</span></div>
+      <div class="cols">
+        <div class="box"><h4>WHAT I BUILT</h4><p>A sandboxed multi-VM network infrastructure to monitor and isolate abnormal client-server session signatures.</p></div>
+        <div class="box"><h4>HOW IT WORKS</h4><p>Controlled IP-spoofing scenarios are analysed through packet/header behaviour, followed by ingress and egress firewall-rule changes to evaluate defensive boundaries.</p></div>
+      </div>
+      <div class="cols box-row" style="margin-top:28px">
+        <div class="box"><h4>SECURITY CONCEPTS INVOLVED</h4><ul><li>IP spoofing and TCP/IP header behaviour</li><li>Packet capture and protocol analysis with Wireshark</li><li>Ingress and egress firewall filtering</li><li>Isolating abnormal client-server sessions</li></ul></div>
+        <div class="box"><h4>WHAT THIS PROJECT SHOWS</h4><ul><li>Deep understanding of how network traffic behaves</li><li>Testing defences instead of assuming they work</li><li>Building safe, isolated lab environments with virtualization</li></ul></div>
+      </div>
+    </article>
+    <div class="pager"><a class="btn ghost" href="experience.html">← Experience</a><a class="btn primary" href="certifications.html">Certifications →</a></div>
+  </main>
+  <footer><span>DEEPA HABIB</span><span>© 2026 Deepa Habib · Cybersecurity Portfolio</span><span>BUILT WITH PURPOSE, NOT NOISE.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
